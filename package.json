@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "type": "module",
-  "keywords": [],
-  "author": "",
+  "keywords": ["Fetch", "backend", "assessment", "project", "keg", "avakian"],
+  "author": "Keg Avakian",
   "license": "ISC",
   "description": "Keg Avakian submission for Summer 2025 SWE position at Fetch",
   "dependencies": {
