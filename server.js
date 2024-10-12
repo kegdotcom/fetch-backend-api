@@ -105,7 +105,7 @@ app.post("/spend", async (req, res) => {
   // get total balance available to the user and make sure we have enough to spend
   const availableBalance = balances.reduce((total, curr) => total + curr.balance, 0);
   if (availableBalance < points) {
-    return res.status(400).send("Sorry, you don't have enough points to spend.");
+    return res.status(400).send(`Sorry, you don't have enough points to spend. Your current balance is ${availableBalance} Points.`);
   }
 
   // build list of unique payer names with positive balances
